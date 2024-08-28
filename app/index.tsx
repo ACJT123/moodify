@@ -1,12 +1,10 @@
-import { Pressable, Text } from 'react-native';
-import { Link } from 'expo-router';
+import { SafeAreaView } from "react-native-safe-area-context";
+import Login from "./login/login";
 
 export default function Page() {
   return (
-    <Link href="/home" asChild>
-      <Pressable>
-        <Text>Home</Text>
-      </Pressable>
-    </Link>
+    <SafeAreaView>
+      <Login />
+    </SafeAreaView>
   );
 }
