@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Page() {
   const rootNavigationState = useRootNavigationState();
-  const [route, setRoute] = useState("/login"); // dont put after the condition
+  const [route, setRoute] = useState("/journal"); // dont put after the condition
 
   if (!rootNavigationState?.key) return null;
 

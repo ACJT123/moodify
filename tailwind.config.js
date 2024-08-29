@@ -9,6 +9,7 @@ module.exports = {
         darkPurple: "#42435f",
         milky: "#ffe4d3",
         white: "#fff1ea",
+        red: "#ff6c54",
       },
     },
   },
