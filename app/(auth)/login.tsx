@@ -1,14 +1,10 @@
+import { router } from "expo-router";
 import {
-  View,
-  Text,
-  StatusBar,
-  ColorValue,
-  TextInput,
   Pressable,
+  Text,
+  TextInput,
+  View
 } from "react-native";
-import { StyleSheet } from "react-native";
-import { palette, theme } from "../../assets/styles/theme";
-import { fontSizes, size } from "../../assets/styles/size";
 
 export default function Login() {
   return (
@@ -44,8 +40,8 @@ export default function Login() {
         </Pressable>
 
         <Pressable
+          onPress={() => router.push("/sign-up")}
           className="bg-darkPurple w-3/4 h-12 mt-4 p-2 rounded-lg items-center justify-center"
-          onPress={() => console.log("Sign up button pressed")}
         >
           <Text className="text-milky text-base font-bold">Sign Up</Text>
         </Pressable>
