@@ -1,12 +1,12 @@
-import { router } from "expo-router";
-import { useEffect } from "react";
+import { Redirect, router, useRootNavigationState } from "expo-router";
+import { useEffect, useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
-import Login from "./(auth)/login";
 
 export default function Page() {
-  return (
-    <SafeAreaView>
-      <Login />
-    </SafeAreaView>
-  );
+  const rootNavigationState = useRootNavigationState();
+  const [route, setRoute] = useState("/login"); // dont put after the condition
+
+  if (!rootNavigationState?.key) return null;
+
+  return <Redirect href={route} />;
 }
