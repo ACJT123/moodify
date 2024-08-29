@@ -17,7 +17,7 @@ export default function Journal() {
           </Text>
 
           <TextInput
-            className="bg-white mt-4 p-2 rounded-lg"
+            className="bg-white mt-4 p-2 h-[200px] rounded-lg"
             placeholder="Share your thoughts here..."
             textContentType="emailAddress"
             multiline
